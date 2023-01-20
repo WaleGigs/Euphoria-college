@@ -1,0 +1,1 @@
+This is a full responsive school Management website with many features.

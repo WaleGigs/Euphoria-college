@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bnb.css">
+    <link rel="stylesheet" href="../bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="bg-white">
+    <div class="modal-dialog" role="document" id="ok">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div style="display: flex; flex-direction: column; width: 100%;">
+            
+            <div>
+              <img src="img/logo.svg" style="width: 130px;" alt="">
+                
+             
+            </div>
+            <div id="modal-loading" class="modal-loading">
+              <img id="pageone" class="img-loading" src="img/Recon.svg" alt="">
+              <img id="pagetwo" class="img-loading" src="img/Rec.svg" alt="">
+              <img id="pagethree" class="img-loading" src="img/Rec.svg" alt="">
+            </div>
+            </div>
+  
+          </div>
+        <div style="height: 100%;">
+  
+        <div id="firstbody" class="modal-body firstbody" style="height: 100%;"> 
+          
+          <div>
+            <div>
+              <p style="font-weight: 800;">1.Pay by Crypto</p>
+            </div>
+            <div style="display: flex; flex-direction: column; background-color: #fbf6f6; padding: 20px;">
+              <p style="font-weight: 100; color: #666666;">Crypto</p>
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <input id="cryptoin" type="number" min="0" class="finput" placeholder="0.00" onkeyup="calculatecry()">
+                <div style="display: flex; flex-direction: row; align-items: center; background-color: #fff; border-radius: 20px; padding: 5px; width: 120px; cursor: pointer;" onclick="">
+                  <img id="crplogo" src="img/bnb.svg" alt="">
+                  <p id="crypto_type" class="crypto_type" style="margin: 0; font-weight: 600; padding: 4px;">BNB</p>
+                  <img onclick="openidmodalone()" src="img/bx-chevron-right.svg" style="height: 17px; width: 17px;" alt="">
+                </div>
+              </div>
+            </div>
+            <div style="position: relative;">
+              <div id="cryptomodal" class="idcomodal cryptomodal" style="box-shadow: rgb(136 136 136) 0px 8px 11px -6px; margin-top: 10px;  position: absolute; display: none; width: 100%; background-color: #fff; z-index: 2000;">
+                <div class="rrr rone" style="display: flex;"><img src="img/bnb.svg" alt=""><p style="margin: 5px; padding: 0px; align-self: center; font-size: 16px;">BNB</p><p style="margin: 0px; padding: 0px; align-self: center; color: #666666; font-size: 13px">Binance coin</p></div>
+                <div class="rrr rtwo" style="display: flex;"><img src="img/eth.svg" alt=""><p style="margin: 5px; padding: 0px; align-self: center; font-size: 16px;">ETH</p><p style="margin: 0px; padding: 0px; align-self: center; color: #666666; font-size: 13px">Ethereum</p></div>
+                <div class="rrr rthree" style="display: flex;"><img src="img/btc.svg" alt=""><p style="margin: 5px; padding: 0px; align-self: center; font-size: 16px;">BTC</p><p style="margin: 0px; padding: 0px; align-self: center; color: #666666; font-size: 13px">Bitcoin</p></div>
+              </div>
+            </div>
+            <div style=" width: 100%; display: flex; justify-content: center;">
+              <p style="background-color: #fbf6f6; background-color: #fbf6f6; width: 24px; height: 24px; border-radius: 30px; margin-bottom: 0; text-align: center; font-size: 20px; font-weight: 500; color: gray; transform: rotate(90deg); margin: 10px 0px;">≈</p>
+            </div>
+  
+            <div style="display: flex; flex-direction: column; background-color: #fbf6f6; padding: 20px;">
+              <p style="font-weight: 100; color: #666666;">Amount</p>
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <input id="usdin" type="number" class="finput" min="0" id="Usd" placeholder="0.00" onkeyup="calculateusd()">
+                <div style="display: flex; flex-direction: row; align-items: center; background-color: #fff; border-radius: 20px; padding: 5px; width: 120px;">
+                  <img style="background-color: #464370; border-radius: 10px;" src="img/doll.svg" alt="">
+                  <p style="margin: 0; font-weight: 600; padding: 4px;">USD</p>
+                </div>
+              </div>
+            </div>
+  
+            <div id="nodoalert" class="nodoall" style="display: none; width: 100%;">
+              <div id="nodoalert" style="display: flex; width: fit-content; align-items: center; background-color: #fff; box-shadow: 1px 2px 9px #918f8f; padding: 15px; position: absolute; top: 10px; right: 0; left: 0; margin: auto; justify-content: center;"  ><img src="img/warn.png" width="24px" height="24px" alt=""><p style="margin: 5px; padding: 0px; align-self: center; font-size: 12px; white-space: nowrap;">Please Input Donation Amount</p></div>
+            </div>
+          </div>
+  
+          
+  
+          <div class="modal-footer">
+            <div style="display: flex; align-items: center; margin-bottom: 8px;">
+            <div style="width: 30px;height: 30px;">
+              <!-- <input class="checkboxx" type="checkbox" checked> -->
+              <div class="round">
+                <input type="checkbox" id="checkbox" checked />
+                <label for="checkbox"></label>
+              </div>
+            </div>
+            <div>
+              <p style="font-size: 14px; margin: 0px;margin-left: 15px; color: #bfbebe;">By proceeding the donation, you agree with our <a href="" style="color: #464370; font-weight: 600;">Terms of Use</a> and <a href="" style="color: #464370; font-weight: 600;">Privacy Policy</a></p>
+            </div>
+            </div>
+            <button style="background-color: #464370; border: #464370;" type="button" class="btn footbtn btn-warning" onclick="gotosecond()">Continue</button>
+          </div>
+            
+        </div>
+  
+        <div id="secondbody" class="modal-body secondbody" style="height: 100%; display: none;">
+          
+            <div>
+  
+            
+              <p style="font-weight: 800;">2. Enter your Information</p>
+              <div style="height: 420px; overflow: scroll;">
+              <!-- <div style="display: flex; margin: 0; margin-top: 10px;">
+                <p style="color: red; font-weight: 300; font-size: 16px; margin-right: 5px;">*</p>
+                <p style="font-size: 13px;">Identity</p>
+              </div> -->
+              <!-- <div style="width: 100%;" onclick="openidmodal()">
+                <input id="identitybox" type="text" placeholder="" value="" style="width: 100%; height: 40px; border: 1px solid #d1c9c9;" disabled>
+                <div style="position: relative;">
+                  <img src="img/bx-chevron-down.svg" style=" position: absolute; right: 2px; bottom: 8px;" alt="">
+                </div>
+              </div>
+              <div id="idmodal" class="idcomodal idmodal" style="box-shadow: rgb(136 136 136) 0px 8px 11px -6px; margin-top: 10px; display: none; position: absolute; width: 90%;">
+                <div id="idfirst" style="padding: 10px 5px; cursor: pointer;"><p onclick="idclickedin()">Per-time Student</p></div>
+                <div id="idsecond" style="padding: 10px 5px; cursor: pointer"><p onclick="idclickedco()">Full-time Student</p></div>
+              </div> -->
+
+              <div style="display: flex; margin: 0; margin-top: 20px;">
+                <p style="color: #464370; font-weight: 300; font-size: 16px; margin-right: 5px;">*</p>
+                <p style="font-size: 13px;">First Name</p>
+              </div>
+              <div style="width: 100%;">
+                <div style="width: 100%;">
+                  <input id="identitybox" type="text" autocomplete="none" placeholder="Full Name" style="width: 100%; height: 40px; padding: 5px; border: 1px solid #d1c9c9;">
+                </div>
+                
+              </div>
+
+
+  
+              <div style="display: flex; margin: 0; margin-top: 20px;">
+                <p style="color: #464370; font-weight: 300; font-size: 16px; margin-right: 5px;">*</p>
+                <p style="font-size: 13px;">Last Name</p>
+              </div>
+              <div style="width: 100%;">
+                <div style="width: 100%;">
+                  <input id="identitybox" type="text" autocomplete="none" placeholder="Full Name" style="width: 100%; height: 40px; padding: 5px; border: 1px solid #d1c9c9;">
+                </div>
+                
+              </div>
+  
+              
+           
+  
+            <div style="display: flex; margin: 0; margin-top: 20px;">
+              <p style="color: #464370; font-weight: 300; font-size: 16px; margin-right: 5px;">*</p>
+              <p style="font-size: 13px;">Email</p>
+            </div>
+  
+            <div style="width: 100%;">
+              <input id="identitybox" type="email" autocomplete="none" placeholder="Email" style="width: 100%; height: 40px; padding: 5px; border: 1px solid #d1c9c9;">
+            </div>
+  
+           
+          
+            
+  
+          
+  
+            </div>
+  
+            </div>
+            
+    
+            <div class="foottwo">
+                <button type="button" class="btn footbtntwo btn-light" style="background-color: #edebeb" onclick="goacktofirst()">Previous</button>
+                <button type="button" style="background-color: #464370;" class="btn footbtntwo " data-toggle="#" data-target="#" onclick="gotothird()">Continue</button>
+            </div>
+              
+          
+        </div>
+        
+        <div id="thirdbody" class="modal-body thirdbody" style="height: 100%; display: none;">
+          
+          <div>
+  
+          
+            <p style="font-weight: 800;">3. Complete your Transaction</p>
+            <div class="lastpa" style=" overflow: scroll;">
+            <div style="display: flex; margin: 0; margin-top: 10px; height: 20px;">
+              <p style="color: #918f8f; font-weight: 300; font-size: 13px; margin-right: 5px;">Pay</p>
+              <p id="donation_amount" style="font-size: 13px; font-weight: 600;">1</p>
+              <p style=" width: 3px;"> </p>
+              <p id="donation_type" style="font-size: 13px; font-weight: 600;">BNB</p>
+            </div>
+            <div style="display: flex; margin: 0; margin-top: 4px; height: 20px;">
+              <p style="color: #918f8f; font-weight: 300; font-size: 13px; margin-right: 5px;">To</p>
+              <p style="font-size: 13px; font-weight: 600;">Euphoria College</p>
+            </div>
+            <div style="margin-top: 30px; display: flex; flex-direction: column; align-items: center;">
+              <img id="barcode" src="img/barcode.png" alt="" style="width: 120px; height: 120px;">
+              <div style="display: flex; padding: 5px;">
+                <form action="">
+                  <textarea id="address" name="text" class="address" readonly style="resize: none; color: #5c5c5c; width: 280px; height: fit-content; border: none; font-weight: 300; font-size: 14px; margin: 5px;">0x1b4A932BFE0Bb8fF56029bc1d0502Cce639388EB</textarea>
+                </form>
+                <img src="img/copy.svg" id="copyid" class="copybtn" alt="" style="width: 20px; height: 20px; align-self: center;" onclick="copytoclipboard()">
+              </div>
+              <p id="addresstype" class="address" style="color: #918f8f; font-weight: 300; font-size: 13px; margin: 5px;">Send only BNB to this deposit address</p>
+            </div>
+  
+  
+            <div id="copyalert" class="copyall" style="display: none; width: 100%;">
+              <div id="copyalert" style="display: flex; width: fit-content; align-items: center; background-color: #fff; box-shadow: 1px 2px 9px #918f8f; padding: 15px; position: absolute; top: 10px; right: 0; left: 0; margin: auto; justify-content: center;" ><img src="img/good.png" width="24px" height="24px" alt=""><p style="margin: 5px; padding: 0px; align-self: center; font-size: 14px; white-space: nowrap;">Address Copied</p></div>
+            </div>
+  
+  
+            
+  
+            <div id="bnbnet" style="display: flex; flex-direction: column; background-color: #fbf6f6; padding: 15px;">
+              <p style="font-weight: 100; color: #666666; margin: 0px;">Network</p>
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div style="display: flex; flex-direction: row; width: 100%; cursor: pointer; justify-content: space-between;" onclick="openmodalthree()">
+                  <p id="networktype" style="margin: 0; font-weight: 300;">Binance Chain (BEP2)</p>
+                  <img src="img/bx-chevron-right.svg" style="height: 17px; width: 17px;" alt="">
+    
+                  
+                </div>
+              </div>
+            </div>
+            <div style="position: relative;">
+              <div id="nemodal" class="idcomodal nemodal" style="box-shadow: rgb(136 136 136) 2px 2px 11px -6px; margin-top: 10px; display: none; position: absolute; width: 100%; background-color: #fff; border: 1px solid #ebebeb96;">
+                <div id="secondsof" style="padding: 10px 5px; cursor: pointer"><p class="nof">Binance Chain (BEP2)</p></div>
+                <div id="thirdsof" style="padding: 10px 5px; cursor: pointer"><p class="nof">Binance Smart Chain (BEP20)</p></div>
+              </div>
+            </div>
+  
+            <div id="ethnet" style="display: flex; flex-direction: column; background-color: #fbf6f6; padding: 15px;">
+              <p style="font-weight: 100; color: #666666; margin: 0px;">Network</p>
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div style="display: flex; flex-direction: row; width: 100%; cursor: pointer; justify-content: space-between;">
+                  <p id="networktype" style="margin: 0; font-weight: 300;">Ethereum (ERC20)</p>
+                </div>
+              </div>
+            </div>
+  
+            <div id="btcnet" style="display: flex; flex-direction: column; background-color: #fbf6f6; padding: 15px;">
+              <p style="font-weight: 100; color: #666666; margin: 0px;">Network</p>
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div style="display: flex; flex-direction: row; width: 100%; cursor: pointer; justify-content: space-between;">
+                  <p id="networktype" style="margin: 0; font-weight: 300;">Bitcoin</p>
+                </div>
+              </div>
+            </div>
+          
+            <div style="display: flex; margin: 0; margin-top: 20px; height: 25px;">
+              <p style="color: red; font-weight: 300; font-size: 16px; margin-right: 5px;">*</p>
+              <p style="font-size: 13px;">TxID</p>
+            </div>
+            <div style="width: 100%;">
+              <input id="taxbox" class="bord" type="name" placeholder="Enter the donation transaction ID" style="width: 100%; height: 40px; padding: 5px; border: 1px solid #d1c9c9;">
+            </div><br><br><br><br>
+            <div class="foottwo">
+              <button type="button" class="btn footbtntwo btn-light" style="background-color: #edebeb" onclick="goacktosecond()">Previous</button>
+              <button type="button" style="background-color: #464370;" class="btn footbtntwo " onclick="confirm()">Confirm</button>
+          </div>
+          </div>
+  
+          
+  
+          </div>
+          
+  
+  
+          
+            
+        
+      </div>
+  
+      <div id="fourthbody" class="modal-body foruthbody" style="height: 100%; display: none; padding: 10px;">
+          
+        <div>
+  
+          <div style="height: 100% ">
+            <div style="display: flex; width: 100%; justify-content: center;">
+              <img src="img/good.png" style="width: 120px; height: 120px;" alt="">
+            </div>
+            <div style="display: flex; margin: 0; margin-top: 15px ;width: 100%; justify-content: center;">
+              <p style="font-size: 20px; font-weight: 600; white-space: nowrap; padding: 0px; margin: 0px;">Transaction Completed</p>
+            </div>
+          <div style="display: flex; margin: 0; margin-top: 10px; height: 20px; width: 100%;justify-content: center;">
+            <p style="color: #918f8f; font-weight: 300; font-size: 15px; margin-right: 5px;">Pay</p>
+            <p id="donation_amountb" style="font-size: 15px; font-weight: 600;">1</p>
+            <p style=" width: 3px;"> </p>
+            <p id="donation_typeb" style="font-size: 15px; font-weight: 600;">BNB</p>
+            <p style=" width: 3px;"> </p>
+            <p style="color: #918f8f; font-weight: 300; font-size: 15px; margin-right: 5px;">To</p>
+          </div>
+          <div style="font-size: 18px; font-weight: 600; text-align: center; padding: 0; margin: 0; width: 100%; margin-top: 10px;">
+            <p style="font-size: 20px; font-weight: 600;">Euphoria College 1st Semester Payment</p>
+          </div>
+          <div style="font-size: 18px; font-weight: 600; text-align: center; padding: 0; margin: 0; width: 100%; margin-top: 10px;">
+            <p style="font-size: 18px; color: #918f8f; font-weight: 300;">Your Payment will be shown on the school portal after the TxID is verified.</p>
+          </div>
+    <button style="white-space: nowrap;" class="mx-auto btn btn-primary"><a style="text-decoration: none;" class="text-white" href="./lndex.html">Go to Home</a></button>
+        </div>
+  
+        </div>
+          
+      
+    </div>
+        
+        </div>
+    </div>
+  </div>
+  
+    </section>
+  
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./bnb.js"></script>
+  <script>
+    window.addEventListener("click", function(event) {
+    let modal = document.getElementsByClassName("idcomodal")[0];
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+  
+  window.onclick = function(event) {
+    let modal = document.getElementsByClassName("idcomodal")[0];
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  
+  $(".bord").bind("click", function(){
+      var divs = $(".bord");
+      var curIdx = divs.index($(this));
+      // $(".item").addClass("active")
+      //txtclick(curIdx,curIdx);
+      // alert(curIdx);
+      var fff = divs.get(curIdx).innerHTML;
+      let text = document.getElementsByClassName("bord")[0]
+  
+      text.style.border = "1px solid #ffc107"
+       
+      //alignpastedrawer(fff);
+      
+  });
+  
+  $(".mtb").bind("click", function(){
+      var divs = $(".mtb");
+      var curIdx = divs.index($(this));
+      // $(".item").addClass("active")
+      //txtclick(curIdx,curIdx);
+      // alert(curIdx);
+      var fff = divs.get(curIdx).innerHTML;
+      let text = document.getElementsByClassName("mtb")[0]
+  
+      text.innerHTML = "";
+       
+      //alignpastedrawer(fff);
+      
+  });
+  
+  
+  </script>
+</body>
+</html>

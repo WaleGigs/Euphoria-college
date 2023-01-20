@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../icofont/icofont.min.css">
+    <title>Document</title>
+    <style>
+        *{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+   
+    /* min-height: 100vh; */
+    align-items: center;
+    display: flex;
+ }
+    </style>
+</head>
+<body>
+    <div class="container align-content-md-center d-md-flex justify-content-center">
+    <form action="" class="lg:tw-w-8/12 mx-auto mt-sm-5">
+        <div class="pt-3"><h2 class=" fw-semibold">WEST AFRICA Examination Council Scholarship Quiz Competition AVSC</h2></div>
+   <p class="fs-5">CountDown:Ongoing</p>
+   <p class="fs-5">Only students in these environment are eligible to be part of these competition</p>
+   <p class="fs-5"><i class="icofont-history fw-bolder"></i>8:00:00PM</p>
+ 
+    <p class="fs-5 icofont-ui-calendar" id="date"></p>
+    <p class="fs-6">Select a subject and click 'start'</p>
+  <p class="fs text-danger">note you can only write a maximum of 5 subjects in a competition</p>
+  <div class="p-3 bg-secondary justify-content-between d-flex rounded my-3 ">
+  <div><span class="text-white fw-bolder">Mathematics</span> </div>  
+    <div class="form-check-box">
+        <input type="checkbox" name="radio" id=""class="form-check-input p-2">
+    </div>
+  </div>
+  <div class="p-3 bg-secondary justify-content-between d-flex rounded my-3 ">
+    <div><span class="text-white fw-bolder">English</span></div>   
+      <div class="form-check-box">
+          <input type="checkbox" name="radio" id=""class="form-check-input p-2">
+      </div>
+    </div>
+    <div class="p-3 bg-secondary justify-content-between d-flex rounded my-3 ">
+        <div><span class="text-white fw-bolder">Biology</span> </div>  
+          <div class="form-check-box">
+              <input type="checkbox" name="radio" id=""class="form-check-input p-2">
+          </div>
+        </div>
+        <div class="p-3 bg-secondary justify-content-between d-flex rounded my-3 ">
+          <div><span class="text-white fw-bolder">Physics</span> </div>  
+            <div class="form-check-box">
+                <input type="checkbox" name="radio" id=""class="form-check-input p-2">
+            </div>
+          </div>
+          <div class="p-3 bg-secondary justify-content-between d-flex rounded my-3 ">
+            <div><span class="text-white fw-bolder">Literature</span> </div>  
+              <div class="form-check-box">
+                  <input type="checkbox" name="radio" id=""class="form-check-input p-2">
+              </div>
+            </div>
+            <div class="p-3 bg-secondary justify-content-between d-flex rounded my-3 ">
+              <div><span class="text-white fw-bolder">Government</span> </div>  
+                <div class="form-check-box">
+                    <input type="checkbox" name="radio" id=""class="form-check-input p-2">
+                </div>
+              </div>
+              <div class="p-3 bg-secondary justify-content-between d-flex rounded my-3 ">
+                <div><span class="text-white fw-bolder">Geography</span> </div>  
+                  <div class="form-check-box">
+                      <input type="checkbox" name="radio" id=""class="form-check-input p-2">
+                  </div>
+                </div>
+                <div class="p-3 bg-secondary justify-content-between d-flex rounded my-3 ">
+                  <div><span class="text-white fw-bolder">Chemistry</span> </div>  
+                    <div class="form-check-box">
+                        <input type="checkbox" name="radio" id=""class="form-check-input p-2">
+                    </div>
+                  </div>
+
+
+
+                            <div class="p-3  justify-content-between d-flex rounded my-3 ">
+                                <div><button class="btn  btn-success"><a style="text-decoration: none;" class="text-white" href="./dashboard.html">Go Back</a></button> </div>  
+                                  <div class="form-check-box">
+                                      <button class="btn btn-primary"><a style="text-decoration: none;" class="text-white" href="./follow.html">Start Exam</a></button>
+                                  </div>
+                                </div>
+    </form>
+    </div>
+</body>
+<script>
+    
+let timeout = null;
+function showDate(){
+    const dateInput = document.getElementById('date')
+    let date = new Date();
+    dateInput.innerHTML=date.toDateString()
+}
+timeout = setInterval(showDate, 0)
+
+</script>
+</html>

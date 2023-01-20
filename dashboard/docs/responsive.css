@@ -1,0 +1,30 @@
+@media screen and (max-width:800px) {
+    .content{
+        flex-direction: column;
+        padding: 1vw;
+    }
+    .qas{
+        margin-top: 500px;
+    }
+    .container{
+        padding-left: 15px;
+    }
+    .col{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:500px) {
+    .content .container{
+        width: 70%;
+    }
+}
+@media screen and (max-width:400px) {
+    .content .container{
+        width: 80%;
+    }
+}
+@media screen and (max-width:300px) {
+    .content .container{
+        width: 90%;
+    }
+}

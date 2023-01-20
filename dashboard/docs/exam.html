@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exam.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebda61e3fa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="title">
+            <h1>Simple Math Quiz</h1>
+            <p>Pick your answer and click the "Next" button to move to the next question.</p>
+            <p>Click the "Prev" button to move to the previous question.</p>
+            <p>Goodluck!</p>
+        </div>
+        <header class="header">
+           
+            <div> <h2>Quiz</h2></div>
+            <p class="status-time">Time:<span class="time">20</span></p>
+        </header>
+        <main class="main-question">
+            <div class="question"></div>
+            <div class="answer-cotainer"></div>
+        </main>
+        <footer class="footer">
+            <p><span class="first"></span> of <span class="last"></span> Question</p>
+            <a class="next-Question" href="#">next</a>
+
+            <a class="end-Quez" href="#">End Quiz</a>
+        </footer>
+    </div>
+    <div class="result-box">
+        <div class="cup">
+            <img class="cup-image">
+        </div>
+        <div class="message">
+            <p class="message-text"></p>
+            <p> You got
+                <span class="result-right"></span>
+                out of
+                <span class="of-question"></span>
+            </p>
+        </div>
+        <a href="#" class="restart-quez">Restart Quiz</a> <br>
+        <a href="../../lndex.html" class="restart-quez btn-primary">Go Home</a>
+
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

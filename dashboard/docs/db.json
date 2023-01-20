@@ -1,0 +1,101 @@
+[
+    {
+        "name": "Samuel Heehaw",
+        "ID": "Computer Science",
+        "location": "Oyo State",
+        "Score": "4.0"
+    },
+    {
+        "name": "Esther Samuel",
+        "ID": "Banking & Finance",
+        "location": "Benue State",
+        "Score": "3.23"
+    },
+    {
+        "name": "Halimah Redux",
+        "ID": "Social Science",
+        "location": "Ethiopia",
+        "Score": "2.8"
+    },
+    {
+        "name": "Rebecca Manuel",
+        "ID": "Medicine",
+        "location": "Calabar State",
+        "Score": "3.8"
+    },
+    {
+        "name": "King Davies",
+        "ID": "Nursing",
+        "location": "Ekiti State",
+        "Score": "4.2"
+    },
+    {
+        "name": "Edward Frank",
+        "ID": "Mass Communication",
+        "location": "Ogun State", 
+        "Score": "2.9"
+    },
+    {
+        "name": "Kamiye Waxon",
+        "ID": "Chemical Engineer",
+        "location": "Niger State",
+        "Score": "1.6",
+        "Exam": "Mathematics",
+        "City": "Oyo state",
+        "Age": "18"
+    },
+    {
+        "name": "Ikea Mavex",
+        "ID": "English",
+        "location": "Ondo State",
+        "Score": "4.3"
+    },
+    {
+        "name": "Favour Heehaw",
+        "ID": "Political Science",
+        "location": "Lagos State",
+        "Score": "3.8"
+    },
+    {
+        "name": "Marian Samuel",
+        "ID": "Mechanical Engineer",
+        "location": "Oyo State",
+        "Score": "3.4"
+    },
+    {
+        "name": "Jaime reddit",
+        "ID": "Edo State",
+        "location": "French",
+        "Score": "2.8"
+    },
+    {
+        "name": "Emmanuel tom",
+        "ID": "Agricultural Engineer",
+        "location": "Uyo State",
+        "Score": "3.3"
+    },
+    {
+        "name": "Daniel Morgan",
+        "ID": "Fishery",
+        "location": "Delta State",
+        "Score": "4.4"
+    },
+    {
+        "name": "Rihana Nicki",
+        "ID": "Computer Science",
+        "location": "Jos State",
+        "Score": "2.8"
+    },
+    {
+        "name": "Oprah Kim",
+        "ID": "Aueronatical Engineer",
+        "location": "Kano State",
+        "Score": "1.8"
+    },
+    {
+        "name": "Abode Bryan",
+        "ID": "Accounting",
+        "location": "Kebbi State",
+        "Score": "3.1"
+    }
+]

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login signup form </title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../icofont/icofont.min.css">
+  
+
+</head>
+<body>
+<div class="wrapper container">
+      <div class="title-text">
+        <div class="title login log">Euphoria</div>
+        <div class="title signup log">Euphoria</div>
+      </div>
+     <center> <div> <a class="navbar-brand" href="#"><img id="lgo" src="../jjj/mylogo.png" alt=""></a></div></center>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>  <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form action="#" class="login">
+            <pre>
+            </pre>
+            <div class="field">
+              <input id="email" type="text" placeholder="Email Address" required>
+            </div>
+            <div class="field">
+              <input id="password" type="password" id="password" placeholder="Password" required>
+             
+            </div>
+            <div class="pass-link"><a href="#">Forgot password?</a></div>
+            <button onclick="addd()" id="butt" style="margin-top: 20px;" class="btn btn-primary m mx-auto"><a style="text-decoration: none; font-size: 20px; color: white;" href="../lndex.html">Login</a></button>
+            <div class="signup-link">Create an account <a href="">Signup now</a></div>
+          </form>
+          <form action="#" class="signup">
+            <div class="field">
+              <input id="name" type="text" placeholder="Name" required>
+            </div>
+            <div class="field">
+              <input id="email" type="text" placeholder="Email Address" required>
+            </div>
+            <div class="field">
+              <input id="password" type="password" placeholder="Password" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Confirm password" required>
+            </div>
+            <button onclick="addd()" id="butt" style="margin-top: 10px;" class="btn btn-primary mx-auto"><a style="text-decoration: none; font-size: 20px; color: white;" href="../lndex.html">Sign Up</a></button>
+            <div class="signup-link">Already have an account? <a href="">Login</a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  <script  src="./script.js"></script>
+  <script  src="../index.js"></script>
+
+</body>
+</html>

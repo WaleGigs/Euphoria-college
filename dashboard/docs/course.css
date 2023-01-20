@@ -1,0 +1,205 @@
+body{
+    /* margin: 0;
+    padding: 0; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left; */
+}
+.darkbtn{
+    position: fixed;
+    top: 1vw;
+    right: 1vw;
+    cursor: pointer;
+     width: fit-content; 
+}
+/*  */
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+h1 span, h1 i{
+    color: #0cbd0c;
+}
+.alert{
+    position: relative;
+    left: -1000%;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.alerting{
+    left: auto;
+}
+.message {
+    position: fixed;
+    top: -1000px;
+}
+.space{
+    height: 30px;
+}
+/* .container{
+    width: 90%;
+    margin: auto;
+    padding-right: 15px;
+    max-width: 600px;
+} */
+.input{
+    margin-bottom: 1rem;
+}
+label{
+    display: block;
+    margin-bottom: 8px;
+}
+.form-design{
+    display: block;
+    width: 20%;
+    margin: auto;
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    height: 30px;
+}
+.bg{
+    background-color: #000000;
+    height: 42px;
+    border-radius: .25rem;
+    overflow: hidden;
+}
+button{
+    width: 100%;
+    border: none;
+    font-size: 19px;
+}
+.btn{
+    background-color: #28a745;
+    color: #ffffff;
+    font-weight: 400;
+    height: 42px;
+    margin-bottom: 1rem;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #28a746b2;
+}
+/* table{
+    width: 80%;
+    margin: 50px auto 30px auto;
+} */
+.edit{
+    background-color: #17a2b8;
+    border-radius: .25rem;
+}
+.delete{
+    background-color: #dc3545;
+    border-radius: .25rem;
+}
+/* .content table{
+    width: 100%;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px 2px grey;
+   
+} */
+.content table i{
+    cursor: pointer;
+}
+.content table tr th{
+    text-align: left;
+    margin-top: 8px;
+    padding: 10px;
+}
+.content table tr th:nth-child(1),
+.content table tr td:nth-child(1),
+.content table tr th:nth-child(3), 
+.content table tr td:nth-child(3){
+    width: 25%;
+}
+.content table tr td:nth-child(2),
+.content table tr th:nth-child(2){
+    width: 30%;
+}
+.content table tr th:nth-child(5), 
+.content table tr td:nth-child(5), 
+.content table tr td:nth-child(4), 
+.content table tr th:nth-child(4) {
+    width: 10%;
+}
+.content table .scroll{
+    display: block;
+    max-height: 250px;
+    overflow: auto;
+}
+thead, tbody tr {
+    display: table;
+     width: 100%;
+    table-layout: fixed; 
+}
+thead {
+    width: calc( 100% - 1em )/* scrollbar is average 1em/16px width, remove it from thead width */
+}
+.other{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.other button{
+    margin: 1vw;
+    cursor: pointer;
+    padding: 6px 12px;
+    width: fit-content;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0000008c;
+    z-index: -5;
+    opacity: 0;
+    width: 0px;
+    transition: all 1s;
+}
+.show{
+    z-index: 5;
+    opacity: 1;
+    width: 100%;
+}
+.overlay #page{
+    background-color: #fff;
+    width: 90%;
+    margin: 3vw auto;
+    padding: 2vw;
+}
+.a{
+    display: flex;
+    justify-content: flex-end;
+    width: 99%;
+    TRANSFORM: translateY(-2vw);
+}
+.leadbox__close {
+    z-index: 1;
+    position: absolute;
+    top: 3vw;
+    right: auto;
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 50%;
+    padding: 10px;
+    background: #dde2eb;
+    width: 16px;
+    height: 16px;
+    fill: #999999;
+    -webkit-transition: fill 0.5s ease;
+    transition: fill 0.5s ease;
+}
+.leadbox__close:hover{
+    fill: red;
+}

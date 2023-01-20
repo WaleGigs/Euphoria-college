@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   
+   min-height: 100vh;
+   background: #03a9f4;
+}
+#log{
+   max-width: 240px;
+   margin-top: -25px;
+   margin-left: -30px;
+ }
+#lgo{
+   width: 230px;
+ }
+.container {
+   width: 400px;
+   border-radius: 10px;
+   padding: 40px;
+   /* justify-content: center;
+   align-items: center; */
+   transition: 0.5s;
+}
+.row{
+   display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+   gap: 13rem;
+    justify-content: space-between;
+ }
+ select{
+   width: 100%;
+   height: 100%;
+   padding: 10px;
+   border-radius: 8px;
+   border: none;
+   font-weight: 700;
+   font-size: 16px;
+   outline: none;
+   background: rgb(241, 240, 237);
+ }
+h1 {
+   text-align: center;
+}
+
+.input-feild {
+   width: 100%;
+   border: none;
+   height: 50px;
+   margin-top: 18px;
+}
+
+.input-feild input {
+   width: 100%;
+   height: 100%;
+   padding: 10px;
+   border-radius: 8px;
+   border: none;
+   font-weight: 700;
+   font-size: 16px;
+   outline: none;
+   background: rgb(241, 240, 237);
+}
+
+.footer {
+   margin-top: 30px;
+}
+
+.footer .checkbox-feild {
+   display: flex;
+}
+
+.footer .checkbox-feild input {
+   width: 20px;
+   height: 20px;
+}
+
+.checkbox-feild span {
+   margin-left: 10px;
+   font-weight: 500;
+}
+
+.btn-feild {
+   width: fit-content;
+   margin: auto;
+   margin-top: 35px;
+}
+
+.btn-feild button {
+   width: 200px;
+   height: 60px;
+   padding: 10px;
+   text-transform: uppercase;
+   border-radius: 10px;
+   border: none;
+   background-image: linear-gradient(120deg, #6db4eb 0%, #96e6a1 100%);
+   font-size: larger;
+   font-weight: 900;
+   color: #fff;
+}
+
+.bottom-feild {
+   margin-top: 25px;
+   font-size: large;
+   font-weight: 600;
+   text-align: center;
+   margin-bottom: 20px;
+}
+#login-span{
+   font-size: medium;
+}
+#login-span a{
+   text-decoration: none;
+   color: #244380;
+}

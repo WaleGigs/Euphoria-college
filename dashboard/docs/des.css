@@ -1,0 +1,145 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1500px, 0, 0); /* The image width */
+  }
+}
+
+/* MISSION SECTION */ /* VISION SECTION */
+.missionvision-wrapper {
+ 
+}
+
+/* .missionvision-wrapper {
+} */
+
+.missionvision-wrapper-brief {
+  font-size: 16px;
+  font-weight: 400;
+  color: #807e7c;
+  margin-bottom: 10px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.missionvision-largetext {
+  font-size: 20px;
+  font-weight: 500;
+  color: #20b303;
+}
+
+@media (max-width: 700px) {
+  .missionvision-wrapper {
+    margin: 0 20px;
+  }
+
+  .missionvision-wrapper-brief {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .missionvision-largetext {
+    font-size: 14px;
+  }
+}
+
+/* TESTIMONY SECTION    */
+.eachtestimony-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 30px 90px;
+  line-height: 1.4;
+}
+
+.eachtestimony-section .one {
+  font-size: 16px;
+  font-weight: 400;
+  color: #807e7c;
+  text-align: left;
+}
+
+.eachtestimony-section .two {
+  font-size: 16px;
+  font-weight: 400;
+  color: #807e7c;
+  text-align: left;
+}
+
+.eachtestimony-section .three {
+  font-size: 40px;
+  font-weight: 700;
+  color: #222222;
+  text-align: left;
+}
+
+.eachtestimony-section .four {
+  font-size: 16px;
+  font-weight: 400;
+  color: #807e7c;
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .eachtestimony-section .one,
+  .eachtestimony-section .two,
+  .eachtestimony-section .four {
+    font-size: 12px;
+  }
+
+  .eachtestimony-section .three {
+    font-size: 30px;
+  }
+}
+
+/* SLIDE FOR TESTIMONIAL */
+/* Slideshow container */
+.slideshow-container {
+ 
+ width: 1500px;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 0px 38px;
+  /* text-align: center; */
+}
+
+.mySlides-images {
+  width: 451.2px;
+  height: 509.2px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+ 
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+ 
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+
+/* The dot/bullet/indicator container */

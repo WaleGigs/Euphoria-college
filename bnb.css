@@ -1,0 +1,748 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background:#b0b6eb;
+}
+
+.navbar {
+    background: argb(0,0,0,0.85);
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.background{
+    width: 100%;
+    height: 30em;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    background-image: url("img/homeee.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    z-index: 0;
+    font-size: 2em;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    padding: 4em 15em 2em 2em;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.whiteup{
+    background-color: rgba(0,0,0,0.5);;
+    width: 600px;
+    height: 330px;
+    align-self: center;
+    border-radius: 10px;
+    /* border: 2px solid #dedede; */
+    padding: 2.5em;
+    font-family: 'Varela Round', sans-serif;
+    align-self: flex-start;
+    margin-top: 100px;
+    margin-left: 50px;
+    backdrop-filter: blur(6px)
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #464370;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.hh{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 30px;
+    font-weight: 700;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    padding-right: 40px;
+    margin-bottom: 10px;
+}
+
+.pp{
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.tt{
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    padding: 6px 6px 0px 0px;
+    font-weight: 600;
+
+}
+
+.progress{
+    height: 8px;
+    background-color: #8f8f8f;
+}
+
+.progress-bar{
+    background-color: #464370;
+}
+
+.phasehead{
+    display: flex; height: 90px;
+}
+
+.phasebox{
+    display: flex; align-self: center; height: 100%;
+}
+
+.phaseline{
+    height: 85%; width: 5px; background-color: #464370;
+}
+
+.phasewriting{
+    white-space: nowrap; font-weight: 600; font-family: 'Varela Round', sans-serif; color: gray; align-self: center; margin-left: 5px;
+}
+
+.phaseheadeffort{
+    font-size: 20px; white-space: nowrap; font-weight: 600; font-family: 'Varela Round', sans-serif; margin: 0; align-self: flex-end;
+}
+
+.lastwrite{
+    font-weight: 400; font-size: 13px; width: 350px; font-family: 'Varela Round', sans-serif; color: gray; align-self: center;
+}
+
+.yyyy{
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+}
+
+.btn{
+    font-weight: 100;
+    width: 110px;
+    font-size: 14px;
+}
+
+.body{
+    background-color: white;
+    width: 100%;
+    min-height: 700px;
+    margin-top: 50px;
+    display: flex;
+    padding: 70px 70px 0px 70px
+}
+
+.css-qxw4xo{
+    width: 240px; 
+    height: 240px; 
+    overflow: hidden;
+}
+
+.highcharts-container{
+    position: relative; 
+    overflow: hidden; 
+    width: 240px; 
+    height: 240px; 
+    text-align: left; 
+    line-height: normal; 
+    z-index: 0; 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    user-select: none; 
+    touch-action: manipulation; 
+    outline: none;
+}
+
+.highcharts-root{
+    font-family: 'Lucida Grande','Lucida Sans Unicode', 'Arial', 'Helvetica', 'sans-serif';
+    font-size: 12px;
+}
+
+.fd{
+    padding: 0px 70px 0px 0px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 0;
+
+}
+
+.oursol{
+    padding-bottom: 50px;
+}
+
+.thead{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    color: #7c7d7e;
+    font-size: 14px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.thead th:not(:last-child){
+    padding: 0.75rem;
+    vertical-align: top;
+    border-right: 1px solid #dee2e6;
+    line-height: 2px;
+    margin-top: 10px;
+}
+  
+tr{
+    border-bottom: 1px solid #aeaeb1
+}
+
+
+.trr{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.trr td{
+    padding: 20px 10px;
+}
+
+.tre td{
+    padding: 4px;
+    
+}
+
+.thead{
+    border-bottom: 0px solid #aeaeb1
+}
+
+
+.trr:nth-child(odd) {
+    background-color: #ecf2f8;
+}
+
+.trr:hover{
+    background-color: #ecf2f8;
+}
+
+td a{
+    color: #000;
+    text-decoration-line: underline;
+}
+
+td a:hover{
+    color: #464370;
+    text-decoration-line: none;
+}
+    
+.list{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    color: #8f8f8f;
+    font-weight: 400;
+}
+
+
+ul a {
+    text-decoration-line: none;
+    color: #8f8f8f;
+}
+
+ul a:hover {
+    text-decoration-line: none;
+    color: #ffc107;
+}
+
+.logo img:hover {
+    backdrop-filter: blur(6px)
+}
+
+.logo img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.footerlnk{
+    display: flex;
+    flex-direction: row;
+    padding-right: 50px;
+    border-right: 1px solid #8f8f8f;
+    height: fit-content;
+}
+
+.footerlnk div{
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.footerlogo{
+    width: fit-content;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.modal-dialog{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content{
+    height: 620px;
+    width: 370px;
+    justify-self: center;
+}
+
+.modal-header{
+    border: none;
+    height: fit-content;
+    display: block;
+}
+
+.modal-body{
+padding-top: 0px;
+position: inherit;
+}
+
+.modal-loading{
+    display: flex;
+    height: 5px;
+    margin-top: 25px;
+}
+
+.img-loading{
+    height: 5px;
+    width: 30px;
+    
+}
+
+.modal{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.finput{
+    border: none;
+    background-color: #fbf6f6;
+    color: #000;
+    font-weight: 400;
+}
+
+input::placeholder{
+    color: grey;
+}
+
+input:focus-visible{
+    border: 1px solid #464370;
+}
+
+.modal-footer{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    left: 0px;
+}
+
+.foottwo{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+}
+
+.round {
+    position: relative;
+  }
+  
+  .round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 25px;
+  }
+  
+  .round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 7px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(-45deg);
+    width: 12px;
+  }
+  
+  .round input[type="checkbox"] {
+    visibility: hidden;
+  }
+  
+  .round input[type="checkbox"]:checked + label {
+    background-color: #464370;
+    border-color: #464370;
+  }
+  
+  .round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+
+  .checkboxx{
+    width: 20px;
+    height: 20px;
+    clip-path: circle(46% at 50% 50%);
+    padding: 10px;
+  }
+
+.footbtn{
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footbtntwo{
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.drop{
+    position: absolute;
+    inset: 0px;
+    height: fit-content;
+    margin: auto 15px 80px;
+    transform:none;
+    transform: translate3d(0px, 0px, 0px);
+    
+}
+
+.secondbody p {
+    margin: 0;
+}
+
+#idmodal div:hover {
+    background-color: #dfe4e9;
+}
+
+#samodal div:hover {
+    background-color: #dfe4e9;
+}
+
+#nemodal div:hover {
+    background-color: #dfe4e9;
+}
+section{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+}
+.bord:focus{
+    border: 1px solid #464370;
+}
+.ok{
+    background-color: #464370;
+}
+.address{
+    color: #918f8f;
+    font-weight: 300;
+    font-size: 11px;
+    margin-right: 5px;
+    width: 80%;
+    height: 20px;
+    line-break: anywhere;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.copyall{
+    display: flex; justify-content: center; position: absolute; right: 0; left: 0; top: 0;
+}
+
+.copybtn{
+    cursor: pointer;
+}
+
+.rrr{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.rrr:hover{
+    background-color: #f5bcbc;
+}
+
+.sof{
+    width: 100%;
+}
+
+.nof{
+    width: 100%;
+    height: 10px ;
+}
+
+.lastpa{
+    height: 400px;
+}
+
+@media screen and (max-width: 1440px) {
+    
+    .foot{
+        padding: 50px 50px 0px 50px;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+/* Navbar for tablet */
+@media screen and (max-width: 960px) {
+
+    .background{
+        width: 100%;
+        height: 800px
+    }
+
+    .whiteup{
+        margin-top: 400px;
+    }
+
+    .body{
+        flex-direction: column;
+    }
+
+    .fd {
+        padding: 0px 0px 50px 0px;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 0;
+    }
+
+    .chart{
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .oursol{
+        padding-bottom: 30px;
+    }
+
+    .boxer{
+        flex-direction: column;
+    }
+
+    .reducedbodytop{
+        margin-top: 20px;
+    }
+
+    .phasehead{
+        display: flex; height: 90px; flex-direction: column-reverse;
+    }
+
+    .phasebox{
+        display: flex; align-self: flex-start; height: 100%; flex-direction: column-reverse;
+    }
+
+    .phaseline{
+        height: 5px; width: 100px; background-color:#464370; margin-bottom: 10px;
+    }
+
+    .phasewriting{
+        white-space: nowrap; font-weight: 600; font-family: 'Varela Round', sans-serif; color: gray; align-self: center; margin-left: 0px; margin: 5px;
+    }
+
+    .phaseheadeffort{
+        font-size: 20px; white-space: nowrap; font-weight: 600; font-family: 'Varela Round', sans-serif; margin: 0; align-self: normal; overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .footerlnk {
+        display: flex;
+        flex-direction: row;
+        padding-right: 50px;
+        border-right: none;
+        border-bottom: 1px solid #8f8f8f;
+        height: fit-content;
+        padding: 20px;
+        padding-bottom: 40px;
+
+    }
+    .footerlnk div li {
+        padding: 2px;
+        white-space: nowrap;
+    }
+
+    .footerlogooo{
+        display: none;
+    }
+
+    .footerlogo {
+        height: 100px;
+        width: 100%;
+    }
+
+    .lastwrite{
+        font-weight: 400;
+        font-size: 14px;
+        width: 600px;
+        font-family: 'Varela Round', sans-serif;
+        color: gray;
+        align-self: center;
+        padding: 20px;
+    }
+
+    .lastpa{
+        height: 350px;
+    }
+
+}
+
+
+
+
+
+
+
+    /* Navbar for tablet */
+
+    /* Navbar for phones */
+@media screen and (max-width: 576px) {
+
+    .whiteup {
+        background-color: rgba(0,0,0,0.5);
+        width: fit-content;
+        height: fit-content; 
+        align-self: center;
+        border-radius: 10px;
+        /* border: 2px solid #dedede; */
+        padding: 1em;
+        font-family: 'Varela Round', sans-serif;
+        align-self: flex-start;
+        margin-top: 300px;
+        margin-left: 0px;
+        backdrop-filter: blur(6px);
+  
+    }
+
+    .background {
+        width: 100%;
+        height: 900px;
+    }
+
+    .body {
+        padding: 15px 15px 0px 15px;
+    }
+
+    .whatstp{
+        margin-top: 55px;
+        width: 300px;
+        font-weight: 700;
+    }
+
+    .yyyy{
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+    }
+
+    .phasehead {
+        display: flex;
+        height: fit-content;
+        flex-direction: column-reverse;
+    }
+
+    .phaseheadeffort {
+        font-size: 20px;
+        white-space: nowrap;
+        font-weight: 600;
+        width: 100%;
+        font-family: 'Varela Round', sans-serif;
+        margin: 0;
+        align-self: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 15px;
+    }
+
+    .reducedbodytop img{
+        width: 100%;
+    }
+
+    .tableee {
+        overflow: scroll;
+    }
+    .footerlnk {
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px;
+        padding-bottom: 10px;
+    }
+    .footerlnk div li {
+        padding: 5px;
+        white-space: nowrap;
+    }
+
+    .footerlnk div h1 {
+        margin-top: 10px;
+    }
+
+    .lastwrite {
+        font-size: 12px;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .modal-dialog{
+        height: 100%;
+    }
+
+    .bbbbb{
+        margin-top: 10px;
+    }
+
+    .modal-content {
+        align-self: center;
+    }
+
+    .lastpa{
+        height: 400px;
+    }
+
+}
+
+
+/* Navbar for phones */
