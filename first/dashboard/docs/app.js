@@ -1,5 +1,3 @@
-// www.bytewebster.com
-// www.bytewebster.com
 
 let $ = document
 
